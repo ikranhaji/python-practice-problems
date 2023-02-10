@@ -13,4 +13,9 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    reversed_word = reversed(word)
+    new_word = "".join(reversed_word)
+    if new_word == word:
+        return True
+    else:
+        return False
