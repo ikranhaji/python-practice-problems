@@ -12,4 +12,3 @@ def is_divisible_by_5(number):
         return "buzz"
     else:
         return number
-
