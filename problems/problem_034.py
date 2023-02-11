@@ -22,7 +22,7 @@
 
 
 def count_letters_and_digits(s):
-    number_of_letters = []
+    number_of_letters = 0
     number_of_digits = 0
     for i in s:
         if i.isdigit():
