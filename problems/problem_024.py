@@ -12,4 +12,3 @@ def calculate_average(values):
         return None
     else:
         return sum(values) / len(values)
-    
