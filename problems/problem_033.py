@@ -18,7 +18,7 @@
 def sum_of_first_n_even_numbers(n):
     if n < 0:
         return None
-    sum= 0
+    sum = 0
     for i in range(n + 1):
-            sum += (i * 2)
+        sum += (i * 2)
     return sum
