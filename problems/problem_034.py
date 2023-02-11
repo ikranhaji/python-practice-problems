@@ -22,4 +22,11 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    number_of_letters = []
+    number_of_digits = 0
+    for i in s:
+        if i.isdigit():
+            number_of_digits += i
+    else:
+        number_of_letters.append(i)
+    return number_of_digits, number_of_letters
