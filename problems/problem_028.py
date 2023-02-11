@@ -11,4 +11,8 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    pass
+    list = ''
+    for x in s:
+        if x not in list:
+            list += x
+    return list
