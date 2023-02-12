@@ -10,7 +10,7 @@
 # Examples:
 #   * input:  []
 #     output: []
-#   * input:  ["3", "1,9"]
+#   * input:
 #     output: [3, 10]
 #   * input:  ["8,1,7", "10,10,10", "1,2,3"]
 #     output:  [16, 30, 6]
@@ -21,4 +21,11 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    final_list = []
+    for csv in csv_lines:
+        sections = csv.split(",")
+        small_list = 0
+        for section in sections:
+            small_list += int(section)
+        final_list.append(small_list)
+    return final_list
