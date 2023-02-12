@@ -13,4 +13,4 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    return {value: key for key, value in dictionary.items()}
