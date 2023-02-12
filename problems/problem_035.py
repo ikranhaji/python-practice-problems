@@ -24,4 +24,11 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    number_letters = 0
+    number_digits = 0
+    for i in s:
+        if i.isdigit():
+            number_digits += 1
+        if i.isalpha():
+            number_letters += 1
+    return number_letters, number_digits
