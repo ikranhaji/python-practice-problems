@@ -30,12 +30,14 @@ class Book:
     # method get_author(self)
     def get_author(self):
         # returns "Author: " + self.author
-        return ("Author:" , self.author)
+        return ("Author:", self.author)
 
     # method get_title(self)
     def get_title(self):
         # returns "Title: " + self.title
         return ("Title:", self.title)
+
+
 book = Book("Natalie Zina Walschots", "Hench")
 print(book.get_author())
 print(book.get_title())
