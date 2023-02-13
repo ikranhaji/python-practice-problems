@@ -20,13 +20,22 @@
 
 
 # class Book
+class Book:
     # method initializer method with required state
     # parameters author and title
-        # set self.author = author
-        # set self.title = title
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
 
     # method get_author(self)
+    def get_author(self):
         # returns "Author: " + self.author
+        return ("Author:" , self.author)
 
     # method get_title(self)
+    def get_title(self):
         # returns "Title: " + self.title
+        return ("Title:", self.title)
+book = Book("Natalie Zina Walschots", "Hench")
+print(book.get_author())
+print(book.get_title())
