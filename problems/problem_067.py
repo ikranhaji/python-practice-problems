@@ -44,7 +44,8 @@ class Employee:
     def get_email(self):
         # returns self.first_name.lower() + "." + self.last_name.lower()
         #         + "@company.com"
-        return self.first_name.lower() + "." + self.last_name.lower() + "@company.com"
+        return (self.first_name.lower() + "." + self.last_name.lower()
+                + "@company.com")
 
 
 employee = Employee("Duska", "Ruzicka")
