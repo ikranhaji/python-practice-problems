@@ -30,5 +30,3 @@ class Book:
 
     def get_title(self):
         return "Title: " + self.title
-
-
