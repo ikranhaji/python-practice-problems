@@ -46,8 +46,3 @@ class Employee:
         #         + "@company.com"
         return (self.first_name.lower() + "." + self.last_name.lower()
                 + "@company.com")
-
-
-employee = Employee("Duska", "Ruzicka")
-print(employee.get_fullname())
-print(employee.get_email())
