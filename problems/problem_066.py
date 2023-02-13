@@ -38,6 +38,3 @@ class Book:
         return ("Title:", self.title)
 
 
-book = Book("Natalie Zina Walschots", "Hench")
-print(book.get_author())
-print(book.get_title())
