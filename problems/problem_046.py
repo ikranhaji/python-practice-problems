@@ -28,4 +28,10 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+    sentence_list = []
+    for subject in subjects:
+        for verb in verbs:
+            for object in objects:
+                sentence = subject + " " + verb + " " + object
+                sentence_list.append(sentence)
+    return sentence_list
