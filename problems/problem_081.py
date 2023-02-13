@@ -41,4 +41,26 @@
 # Behavior:
 #    * speak()          # Returns the string "Sssssss!"
 
+class Animal:
+    def __init__(self, legs, color):
+        self.number_of_legs = legs
+        self.primary_color = color
 
+    def describe(self):
+        return (self.__class__.__name__ + " has " + str(self.number_of_legs)
+                + " legs and is primarily " + self.primary_color)
+
+
+class Dog(Animal):
+    def speak(self):
+        return "Bark!"
+
+
+class Cat(Animal):
+    def speak(self):
+        return "Miao!"
+
+
+class Snake(Animal):
+    def speak(self):
+        return "Sssssss!"
