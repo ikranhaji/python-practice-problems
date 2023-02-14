@@ -13,3 +13,9 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+def only_odds(list):
+    odd_list = []
+    for number in list:
+        if number % 2 > 0:
+            odd_list.append(number)
+    return odd_list
