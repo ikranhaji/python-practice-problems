@@ -17,9 +17,10 @@ def halve_the_list(list):
     list3 = []
     length = len(list)
     middle = length // 2
-    list2.append(list[:middle])
-    list3.append(list[middle:])
+    if length % 2 == 0:
+        list2.append(list[:middle])
+        list3.append(list[middle:])
+    else:
+        list2.append(list[:middle + 1])
+        list3.append(list[middle + 1:])
     return list2, list3
-
-print(halve_the_list([1, 2, 3, 4]))
-print(halve_the_list([1, 2, 3]))
