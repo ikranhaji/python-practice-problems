@@ -22,3 +22,16 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def group_cities_by_state(cities):
+    dict = {}
+    for city in cities:
+        temp = city.split(", ")
+        city_name = temp[0]
+        state = temp[1]
+        if state in dict:
+            curr_list = dict[state]
+            curr_list.append(city_name)
+            dict[state] = curr_list
+        else:
+            dict[state] = [city_name]
+    return dict
