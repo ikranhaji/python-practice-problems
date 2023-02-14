@@ -15,3 +15,9 @@
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
 
+def username_from_email(email):
+    final_email = []
+    new_email = email.split("@")
+    for i in new_email:
+        final_email.append(i)
+    return final_email[0]

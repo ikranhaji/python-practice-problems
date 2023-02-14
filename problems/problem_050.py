@@ -12,3 +12,14 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(list):
+    list2 = []
+    list3 = []
+    length = len(list)
+    middle = length // 2
+    list2.append(list[:middle])
+    list3.append(list[middle:])
+    return list2, list3
+
+print(halve_the_list([1, 2, 3, 4]))
+print(halve_the_list([1, 2, 3]))
