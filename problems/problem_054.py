@@ -15,3 +15,8 @@
 #    * input:   "raise"
 #      RAISES:  ValueError
 
+def check_input(value):
+    if value == "raise":
+        raise ValueError
+    else:
+        return value
