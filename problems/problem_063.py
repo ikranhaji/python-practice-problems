@@ -21,3 +21,15 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+
+def shift_letters(word):
+    final_word = ""
+    for letter in word:
+        if letter == "Z":
+            new_letter = "A"
+        elif letter == "z":
+            new_letter = "a"
+        else:
+            new_letter = chr(ord(letter) + 1)
+        final_word += new_letter
+    return final_word
