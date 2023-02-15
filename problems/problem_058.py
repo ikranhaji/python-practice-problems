@@ -13,7 +13,7 @@
 # In the items in the input, there will only be one comma.
 #
 # Examples:
-#     * input:   ["San Antonio, TX"]
+input=["San Antonio, TX"]
 #       returns: {"TX": ["San Antonio"]}
 #     * input:   ["Springfield, MA", "Boston, MA"]
 #       returns: {"MA": ["Springfield", "Boston"]}
