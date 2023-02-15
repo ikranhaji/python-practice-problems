@@ -21,4 +21,14 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    new_list= []
+    for num in csv_lines:
+        number= num.split(",")
+        count = 0
+        for x in number:
+            new_number= int(x)
+            count += new_number
+        new_list.append(count)
+
+
+    return new_list
